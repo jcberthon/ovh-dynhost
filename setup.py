@@ -4,7 +4,8 @@ from codecs import open
 from os import path
 
 # Get version in namespace
-execfile('ovh_dynhost/_version.py')
+exec(open('ovh_dynhost/_version.py').read())
+
 
 here = path.abspath(path.dirname(__file__))
 
