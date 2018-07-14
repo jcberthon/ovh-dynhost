@@ -119,10 +119,8 @@ def main():
                                               username=username,
                                               password=password)
 
-    LOGGER.debug('Hostname {hostname} username {username} '
-                 'password {password}'.format(hostname=hostname,
-                                              username=username,
-                                              password=password))
+    LOGGER.debug('Hostname {hostname} username {username}'.format(hostname=hostname,
+                                              username=username))
 
     if public_ip_api_url:
         url = public_ip_api_url
